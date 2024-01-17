@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html 
+	lang="zh_CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> 牛客小白月赛85个人题解 -  blog of Saanteye</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+		<link
+			rel="shortcut icon"
+			href="/img/av.png"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+			
+				
+<link rel="stylesheet" href="/style.css">
+
+			
+				
+<link rel="stylesheet" href="/custom.css">
+
+			
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 6.3.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('/img/bg.png')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="blog of Saanteye">
+        <img
+			src="/img/av.png"
+			alt="Saanteye"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a href="/img/av.png" title="Saanteye">
+			<img
+				src="/img/av.png"
+				alt="Saanteye"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>4</div>
+		<div><span>标签</span>1</div>
+		<div><span>分类</span>0</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/XCPC/" style="font-size: 10px;">XCPC</a>
+		</div>
+		
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2024
+		<a href="/">Saanteye</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div class="kira-post-cover">
+			<img
+				data-src="/img/nc.png"
+				data-sizes="auto"
+				alt="牛客小白月赛85个人题解"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>牛客小白月赛85个人题解</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2024年01月05日</a>
+			<a><i class="kirafont icon-edit-fill"></i>1.6k 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 8 分钟</a>
+		</div>
+		<h2><span id="aaccept">A.ACCEPT</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/72980/A">https://ac.nowcoder.com/acm/contest/72980/A</a><br>统计 A,C,E,P,T 字符数量，取小即可，注意对 C 取小时需要除 2 。<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt; pii;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e6</span> + <span class="hljs-number">10</span>, mod = <span class="hljs-number">998244353</span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n; cin &gt;&gt; n;<br>    string s; cin &gt;&gt; s;<br>    map&lt;<span class="hljs-type">char</span>,<span class="hljs-type">int</span>&gt; mp;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; s.<span class="hljs-built_in">size</span>(); i++)<br>        mp[s[i]]++;<br>    <span class="hljs-type">int</span> mi = <span class="hljs-number">1e18</span>;<br>    string t = <span class="hljs-string">&quot;ACCEPT&quot;</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; t.<span class="hljs-built_in">size</span>(); i++) &#123;<br>        <span class="hljs-keyword">if</span> (t[i] == <span class="hljs-string">&#x27;C&#x27;</span>) mi = <span class="hljs-built_in">min</span>(mi, mp[t[i]] / <span class="hljs-number">2</span>);<br>        <span class="hljs-keyword">else</span><br>        mi = <span class="hljs-built_in">min</span>(mi, mp[t[i]]);<br>    &#125;<br>    cout &lt;&lt; mi &lt;&lt; <span class="hljs-string">&#x27;\n&#x27;</span>;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br>    cin &gt;&gt; t;<br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="b咕呱蛙">B.咕呱蛙</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/72980/B">https://ac.nowcoder.com/acm/contest/72980/B</a><br>首先可以知道青蛙数量的通项是等差数列求和 (1 + x) * x &#x2F; 2，那么合法的x即为所有的4的倍数与4的倍数-1<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt; pii;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e6</span> + <span class="hljs-number">10</span>, mod = <span class="hljs-number">998244353</span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n; cin &gt;&gt; n;<br>    <span class="hljs-type">int</span> ans = (n + <span class="hljs-number">1</span>) / <span class="hljs-number">2</span> * <span class="hljs-number">4</span>;<br>    <span class="hljs-keyword">if</span> (n % <span class="hljs-number">2</span>) ans--;<br>    cout &lt;&lt; ans;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br>    <span class="hljs-comment">// cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="c得分显示">C.得分显示</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/72980/C">https://ac.nowcoder.com/acm/contest/72980/C</a><br>二分答案，模拟过程判断即可<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt; pii;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e6</span> + <span class="hljs-number">10</span>, mod = <span class="hljs-number">998244353</span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n; cin &gt;&gt; n;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">a</span><span class="hljs-params">(n)</span></span>; <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> &amp;x:a) cin &gt;&gt; x;<br>    <span class="hljs-type">double</span> l = <span class="hljs-number">0</span>, r = <span class="hljs-number">1e9</span> + <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (<span class="hljs-built_in">abs</span>(r - l) &gt; <span class="hljs-number">0.00001</span>) &#123;<br>        <span class="hljs-type">double</span> mid = (r + l) / <span class="hljs-number">2</span>;<br>        <span class="hljs-type">double</span> sum = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> f = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>            sum += mid;<br>            <span class="hljs-type">int</span> jg = <span class="hljs-built_in">floor</span>(sum);<br>            <span class="hljs-keyword">if</span> (jg &gt; a[i]) &#123;<br>                r = mid;<br>                f = <span class="hljs-number">1</span>;<br>                <span class="hljs-keyword">break</span>;<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (jg &lt; a[i])&#123;<br>                l = mid;<br>                f = <span class="hljs-number">1</span>;<br>                <span class="hljs-keyword">break</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (!f) l = mid;<br>    &#125;<br>    cout &lt;&lt; fixed &lt;&lt; <span class="hljs-built_in">setprecision</span>(<span class="hljs-number">10</span>);<br>    cout &lt;&lt; l;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br>    <span class="hljs-comment">// cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="d阿里马马与四十大盗">D.阿里马马与四十大盗</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/72980/D">https://ac.nowcoder.com/acm/contest/72980/D</a><br>贪心，恢复血量花费的时间只与已损失的血量有关，所以提前恢复血量并不会使得答案更劣，当得到的血量总量大于需要损失的总量时说明可以成功逃跑，所以策略就是在能够恢复血量时恢复血量直到获得的血量总量大于需要的总量。<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt; pii;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e6</span> + <span class="hljs-number">10</span>, mod = <span class="hljs-number">998244353</span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n,k; cin &gt;&gt; n &gt;&gt; k;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">a</span><span class="hljs-params">(n)</span></span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)<br>        cin &gt;&gt; a[i];<br>    <span class="hljs-type">int</span> now = k;<br>    <span class="hljs-type">int</span> ns = k, sum = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)<br>        sum += a[i];<br>    <span class="hljs-type">int</span> ans = n - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt; n; i++) &#123;<br>        <span class="hljs-keyword">if</span> (a[i] == <span class="hljs-number">0</span>) &#123;<br>            <span class="hljs-keyword">if</span> (ns &lt;= sum) &#123;<br>                ns += k - now;<br>                ans += k - now;<br>                now = k;<br>            &#125;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            now -= a[i];<br>            <span class="hljs-keyword">if</span> (now &lt;= <span class="hljs-number">0</span>) &#123;<br>                cout &lt;&lt; <span class="hljs-string">&quot;NO&quot;</span>;<br>                <span class="hljs-keyword">return</span> ;<br>            &#125;<br>        &#125;<br>    &#125;<br>    cout &lt;&lt; ans;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br>    <span class="hljs-comment">// cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="e烙饼">E.烙饼</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/72980/E">https://ac.nowcoder.com/acm/contest/72980/E</a><br>因为一张烙饼不能同时在多个烙饼机上烤，所以所需总时间一定大于等于所需时间最久的烙饼。<br>贪心的想，当所需总时间固定时，尽可能地填满每个烙饼机的所有时间。<br>考虑到一张烙饼不能同时在多个烙饼机上烤的限制，于是从大到小放烙饼，当一个烙饼机剩余的时间无法考完一个烙饼时，就分开这个烙饼，将它的后半段放在下一个烙饼机的开始时间烤，可以知道这样子不会有同一张烙饼同时在不同烙饼机上烤。<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt; pii;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e6</span> + <span class="hljs-number">10</span>, mod = <span class="hljs-number">998244353</span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n, m; cin &gt;&gt; n &gt;&gt; m;<br>    <span class="hljs-type">int</span> sum = <span class="hljs-number">0</span>;<br>    <span class="hljs-function">vector&lt;pii&gt; <span class="hljs-title">a</span><span class="hljs-params">(n)</span></span>; <br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        cin &gt;&gt; a[i].first;<br>        sum += a[i].first;<br>        a[i].second = i;<br>    &#125;<br>    <span class="hljs-built_in">sort</span>(a.<span class="hljs-built_in">begin</span>(), a.<span class="hljs-built_in">end</span>());<br>    <span class="hljs-type">int</span> ok = <span class="hljs-built_in">max</span>(a[n - <span class="hljs-number">1</span>].first, (sum + m - <span class="hljs-number">1</span>) / m);<br>    <span class="hljs-type">int</span> cnt = <span class="hljs-number">1</span>, lst = <span class="hljs-number">0</span>;<br>    vector&lt;array&lt;<span class="hljs-type">int</span>,4&gt;&gt; ans;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = n - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>        <span class="hljs-keyword">while</span> (a[i].first) &#123;<br>            <span class="hljs-type">int</span> l = lst, r = <span class="hljs-built_in">min</span>(lst + a[i].first, ok);<br>            lst = r;<br>            a[i].first -= r - l;<br>            ans.<span class="hljs-built_in">push_back</span>(&#123;a[i].second + <span class="hljs-number">1</span>,cnt,l,r&#125;);<br>            <span class="hljs-keyword">if</span> (lst == ok) &#123;<br>                cnt++;<br>                lst = <span class="hljs-number">0</span>;<br>            &#125;<br>        &#125;<br>    &#125;<br>    cout &lt;&lt; ans.<span class="hljs-built_in">size</span>() &lt;&lt; <span class="hljs-string">&#x27;\n&#x27;</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> b:ans)<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++)<br>            cout &lt;&lt; b[i] &lt;&lt; <span class="hljs-string">&quot; \n&quot;</span>[i == <span class="hljs-number">3</span>];<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br>    <span class="hljs-comment">// cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="f龙吸水easy">F.龙吸水（EASY）</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/72980/F">https://ac.nowcoder.com/acm/contest/72980/F</a><br>观察数据范围，思考 dp。<br>定义 dp[i][j] 为第 i 天水位为 j 时前 i 天最多的无灾日。<br>每日的水位变化是 a 数组的差分b，那么 dp[i + 1][max(0,j + b[i + 1])] &#x3D; max(dp[i + 1][max(0LL,j + b[i + 1])], dp[i][j])。<br>考虑操作，可以降低每天的水位，于是 dp[i + 1][j] &#x3D; max(dp[i + 1][j + 1], dp[i + 1][j]);<br>那么这天 j 在区间 [l,r] 的是无灾日 dp[i + 1][j] +&#x3D; 1;<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt; pii;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e4</span> + <span class="hljs-number">10</span>, mod = <span class="hljs-number">998244353</span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n,l,r; cin &gt;&gt; n &gt;&gt; l &gt;&gt; r;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">a</span><span class="hljs-params">(n + <span class="hljs-number">1</span>)</span>, <span class="hljs-title">b</span><span class="hljs-params">(n + <span class="hljs-number">1</span>)</span></span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) cin &gt;&gt; a[i];<br>    b[<span class="hljs-number">1</span>] = a[<span class="hljs-number">1</span>];<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++)<br>        b[i] = a[i] - a[i - <span class="hljs-number">1</span>];<br>    vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt; <span class="hljs-built_in">dp</span>(n + <span class="hljs-number">1</span>, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-type">int</span>&gt; (N,<span class="hljs-number">-1</span>));<br>    dp[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt;= <span class="hljs-number">5000</span>; j++) &#123;<br>            dp[i + <span class="hljs-number">1</span>][<span class="hljs-built_in">max</span>(<span class="hljs-number">0LL</span>,j + b[i + <span class="hljs-number">1</span>])] = <span class="hljs-built_in">max</span>(dp[i + <span class="hljs-number">1</span>][<span class="hljs-built_in">max</span>(<span class="hljs-number">0LL</span>,j + b[i + <span class="hljs-number">1</span>])], dp[i][j]);<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">5000</span>; j &gt;= <span class="hljs-number">0</span>; j--) &#123;<br>            dp[i + <span class="hljs-number">1</span>][j] = <span class="hljs-built_in">max</span>(dp[i + <span class="hljs-number">1</span>][j + <span class="hljs-number">1</span>], dp[i + <span class="hljs-number">1</span>][j]);<br>        &#125;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = l; j &lt;= <span class="hljs-built_in">min</span>(r,<span class="hljs-number">5000LL</span>); j++) &#123;<br>            <span class="hljs-keyword">if</span> (dp[i + <span class="hljs-number">1</span>][j] != <span class="hljs-number">-1</span>)<br>            dp[i + <span class="hljs-number">1</span>][j] += <span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">5000</span>; i++)<br>        ans = <span class="hljs-built_in">max</span>(ans, dp[n][i]);<br>    cout &lt;&lt; ans;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br>    <span class="hljs-comment">// cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="g龙吸水hard">G.龙吸水（HARD）</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/72980/G">https://ac.nowcoder.com/acm/contest/72980/G</a><br>TBD<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C++"><br></code></pre></td></tr></table></figure>
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>本文作者：</strong>Saanteye<br>
+        <strong>本文链接：</strong><a href="http://www.saanteye.com/2024/01/05/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B85%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/" title="http:&#x2F;&#x2F;www.saanteye.com&#x2F;2024&#x2F;01&#x2F;05&#x2F;牛客小白月赛85个人题解&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;www.saanteye.com&#x2F;2024&#x2F;01&#x2F;05&#x2F;牛客小白月赛85个人题解&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+		
+			<a class="kirafont icon-tag-fill -none-link" href="/tags/XCPC/" rel="tag">XCPC</a>
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html 
+	lang="zh_CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> day1 -  blog of Saanteye</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+		<link
+			rel="shortcut icon"
+			href="/img/av.png"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+			
+				
+<link rel="stylesheet" href="/style.css">
+
+			
+				
+<link rel="stylesheet" href="/custom.css">
+
+			
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 6.3.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('/img/bg.png')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="blog of Saanteye">
+        <img
+			src="/img/av.png"
+			alt="Saanteye"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a href="/img/av.png" title="Saanteye">
+			<img
+				src="/img/av.png"
+				alt="Saanteye"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>4</div>
+		<div><span>标签</span>1</div>
+		<div><span>分类</span>0</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/XCPC/" style="font-size: 10px;">XCPC</a>
+		</div>
+		
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2024
+		<a href="/">Saanteye</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div class="kira-post-cover">
+			<img
+				data-src="/img/hj.png"
+				data-sizes="auto"
+				alt="day1"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>day1</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2024年01月04日</a>
+			<a><i class="kirafont icon-edit-fill"></i>1.5k 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 8 分钟</a>
+		</div>
+		<h2><span id="河南萌新赛3-g真-x困难版本">河南萌新赛3 G.真 · x（困难版本）</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/62332/G">https://ac.nowcoder.com/acm/contest/62332/G</a><br>树状数组套线段树<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-keyword">typedef</span> pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt; pii;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">4e4</span> + <span class="hljs-number">10</span>, mod = <span class="hljs-number">998244353</span>;<br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">Info</span> &#123;<br>    <span class="hljs-type">int</span> l,r;<br>    <span class="hljs-type">int</span> sum;<br>&#125; tr[N &lt;&lt; <span class="hljs-number">10</span>];<br><span class="hljs-type">int</span> tot = <span class="hljs-number">0</span>;<br><span class="hljs-type">int</span> n,q;<br><span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">rt</span><span class="hljs-params">(N)</span></span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">push_up</span><span class="hljs-params">(<span class="hljs-type">int</span> p)</span> </span>&#123;<br>    tr[p].sum = tr[tr[p].l].sum + tr[tr[p].r].sum;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-type">int</span> k,<span class="hljs-type">int</span> c,<span class="hljs-type">int</span> s,<span class="hljs-type">int</span> t,<span class="hljs-type">int</span> &amp;p)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (!p) p = ++tot;<br>    <span class="hljs-keyword">if</span> (s == t) &#123;<br>        tr[p].sum += c;<br>        <span class="hljs-keyword">return</span> ;<br>    &#125;<br><br>    <span class="hljs-type">int</span> mid = s + t &gt;&gt; <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">if</span> (k &lt;= mid) <span class="hljs-built_in">insert</span>(k,c,s,mid,tr[p].l);<br>    <span class="hljs-keyword">if</span> (k &gt;= mid + <span class="hljs-number">1</span>) <span class="hljs-built_in">insert</span>(k,c,mid + <span class="hljs-number">1</span>,t,tr[p].r);<br>    <span class="hljs-built_in">push_up</span>(p);<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">query</span><span class="hljs-params">(<span class="hljs-type">int</span> l,<span class="hljs-type">int</span> r,<span class="hljs-type">int</span> s,<span class="hljs-type">int</span> t,<span class="hljs-type">int</span> p)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (!p) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">if</span> (l &lt;= s &amp;&amp; t &lt;= r) <span class="hljs-keyword">return</span> tr[p].sum;<br>    <span class="hljs-type">int</span> mid = s + t &gt;&gt; <span class="hljs-number">1</span>, res = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">if</span> (l &lt;= mid) res += <span class="hljs-built_in">query</span>(l,r,s,mid,tr[p].l);<br>    <span class="hljs-keyword">if</span> (r &gt;= mid + <span class="hljs-number">1</span>) res += <span class="hljs-built_in">query</span>(l,r,mid + <span class="hljs-number">1</span>,t,tr[p].r);<br>    <span class="hljs-keyword">return</span> res;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-type">int</span> k,<span class="hljs-type">int</span> pos, <span class="hljs-type">int</span> c)</span> </span>&#123;<br>    <span class="hljs-keyword">while</span> (k &lt;= n) &#123;<br>        <span class="hljs-built_in">insert</span>(pos,c,<span class="hljs-number">1</span>,<span class="hljs-number">1e9</span>,rt[k]);<br>        k += k &amp; -k;<br>    &#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">ask</span><span class="hljs-params">(<span class="hljs-type">int</span> l,<span class="hljs-type">int</span> r,<span class="hljs-type">int</span> ql,<span class="hljs-type">int</span> qr)</span> </span>&#123;<br>    <span class="hljs-type">int</span> res = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">while</span> (r) &#123;<br>        res += <span class="hljs-built_in">query</span>(ql,qr,<span class="hljs-number">1</span>,<span class="hljs-number">1e9</span>,rt[r]);<br>        r -= r &amp; -r;<br>    &#125;<br>    l--;<br>    <span class="hljs-keyword">while</span> (l) &#123;<br>        res -= <span class="hljs-built_in">query</span>(ql,qr,<span class="hljs-number">1</span>,<span class="hljs-number">1e9</span>,rt[l]);<br>        l -= l &amp; -l;<br>    &#125;<br>    <span class="hljs-keyword">return</span> res;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    cin &gt;&gt; n &gt;&gt; q;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">a</span><span class="hljs-params">(n + <span class="hljs-number">1</span>)</span></span>; <br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) cin &gt;&gt; a[i];<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) <span class="hljs-built_in">add</span>(i,a[i],a[i]);<br>    <span class="hljs-keyword">while</span> (q--) &#123;<br>        <span class="hljs-type">int</span> op; cin &gt;&gt; op;<br>        <span class="hljs-keyword">if</span> (op == <span class="hljs-number">1</span>) &#123;<br>            <span class="hljs-type">int</span> k,c; cin &gt;&gt; k &gt;&gt; c;<br>            <span class="hljs-built_in">add</span>(k,a[k],-a[k]);<br>            <span class="hljs-built_in">add</span>(k,a[k] = c,c);<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-type">int</span> l,r; cin &gt;&gt; l &gt;&gt; r;<br>            <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>, lst = <span class="hljs-number">0</span>;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">32</span>; i++) &#123;<br>                <span class="hljs-type">int</span> cur = <span class="hljs-built_in">ask</span>(l,r,lst + <span class="hljs-number">1</span>,ans + <span class="hljs-number">1</span>);<br>                <span class="hljs-keyword">if</span> (cur) &#123;<br>                    lst = ans + <span class="hljs-number">1</span>;<br>                    ans += cur;<br>                &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">break</span>;<br>            &#125;<br>            cout &lt;&lt; ans + <span class="hljs-number">1</span> &lt;&lt; <span class="hljs-string">&#x27;\n&#x27;</span>;<br>        &#125;<br>    &#125;   <br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br>    <span class="hljs-comment">// cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="2023icpc-taipei-i-interval-addition">2023ICPC Taipei I. Interval Addition</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://qoj.ac/contest/1382/problem/7566">https://qoj.ac/contest/1382/problem/7566</a><br>拆分，操作变为选择两个元素连接，使他们在和相同的前提下，可以随意改变值。那么如果连接的元素总和为0，他们就可以变成0。所以需要用最少的连接使得所有元素都在一个总和为0的块中。状压dp。<br>dp[i] &#x3D; max({dp[j]}) + [sum[i] &#x3D;&#x3D; 0]<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e6</span>+<span class="hljs-number">5</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> inf=<span class="hljs-number">1e9</span>;<br><span class="hljs-meta">#<span class="hljs-keyword">define</span>  PII pair<span class="hljs-string">&lt;int,int&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n; cin &gt;&gt; n;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">a</span><span class="hljs-params">(n + <span class="hljs-number">1</span>)</span></span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) cin &gt;&gt; a[i];<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">b</span><span class="hljs-params">(n + <span class="hljs-number">1</span>)</span></span>; b[<span class="hljs-number">0</span>] = a[<span class="hljs-number">0</span>];<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) b[i] = a[i] - a[i - <span class="hljs-number">1</span>];<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-number">1</span> &lt;&lt; (n + <span class="hljs-number">1</span>))</span></span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> s = <span class="hljs-number">0</span>; s &lt; (<span class="hljs-number">1</span> &lt;&lt; (n + <span class="hljs-number">1</span>)); s++)<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt;= n; j++)<br>            <span class="hljs-keyword">if</span> (s &gt;&gt; j &amp; <span class="hljs-number">1</span>)<br>                sum[s] += b[j];<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">dp</span><span class="hljs-params">(<span class="hljs-number">1</span> &lt;&lt; (n + <span class="hljs-number">1</span>))</span></span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> s = <span class="hljs-number">0</span>; s &lt; (<span class="hljs-number">1</span> &lt;&lt; (n + <span class="hljs-number">1</span>)); s++) &#123;<br>        <span class="hljs-keyword">if</span> (!sum[s]) dp[s]++;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; n; j++)<br>            dp[s | (<span class="hljs-number">1</span> &lt;&lt; j)] = <span class="hljs-built_in">max</span>(dp[s | (<span class="hljs-number">1</span> &lt;&lt; j)], dp[s]);<br>    &#125;<br>    cout &lt;&lt; n + <span class="hljs-number">1</span> - dp[(<span class="hljs-number">1</span> &lt;&lt; (n + <span class="hljs-number">1</span>)) - <span class="hljs-number">1</span>];<br>&#125;<br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br><span class="hljs-comment">//    cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="2023icpc-hongkong-e-goose-goose-duck">2023ICPC HongKong E. Goose, Goose, DUCK?</span></h2><p>来源:<a target="_blank" rel="noopener" href="https://codeforces.com/gym/104172/problem/E">https://codeforces.com/gym/104172/problem/E</a><br>枚举右端点 r ,维护合法的左端点，线段树维护最小值的个数，对于某数出现位置的集合 S ，其出现过 n 次，那么此时由它造成的不合法的左端点的区间为 [S[n - k - 1], S[n - k]]，在线段树上维护其贡献1，那么区间的0的个数即为合法的左端点个数。<br>Code:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> N = <span class="hljs-number">1e6</span>+<span class="hljs-number">5</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> inf=<span class="hljs-number">1e9</span>;<br><span class="hljs-meta">#<span class="hljs-keyword">define</span> PII pair<span class="hljs-string">&lt;int,int&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">Info</span> &#123;<br>    <span class="hljs-type">int</span> mi,num;<br>    <span class="hljs-type">int</span> tag;<br>&#125; tr[N &lt;&lt; <span class="hljs-number">2</span>];<br><span class="hljs-type">int</span> n,k;<br><span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">a</span><span class="hljs-params">(N)</span></span>;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">push_up</span><span class="hljs-params">(<span class="hljs-type">int</span> p)</span> </span>&#123;<br>    tr[p].mi = <span class="hljs-built_in">min</span>(tr[p &lt;&lt; <span class="hljs-number">1</span>].mi, tr[p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>].mi);<br>    tr[p].num = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">if</span> (tr[p].mi == tr[p &lt;&lt; <span class="hljs-number">1</span>].mi) tr[p].num += tr[p &lt;&lt; <span class="hljs-number">1</span>].num;<br>    <span class="hljs-keyword">if</span> (tr[p].mi == tr[p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>].mi) tr[p].num += tr[p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>].num;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">push_down</span><span class="hljs-params">(<span class="hljs-type">int</span> p)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (tr[p].tag) &#123;<br>        tr[p &lt;&lt; <span class="hljs-number">1</span>].mi += tr[p].tag;<br>        tr[p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>].mi += tr[p].tag;<br>        tr[p &lt;&lt; <span class="hljs-number">1</span>].tag += tr[p].tag;<br>        tr[p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>].tag += tr[p].tag;<br>        tr[p].tag = <span class="hljs-number">0</span>;<br>        <span class="hljs-built_in">push_up</span>(p);<br>    &#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">build</span><span class="hljs-params">(<span class="hljs-type">int</span> s,<span class="hljs-type">int</span> t,<span class="hljs-type">int</span> p)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (s == t) &#123;<br>        tr[p].mi = tr[p].tag = <span class="hljs-number">0</span>;<br>        tr[p].num = <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">return</span>;<br>    &#125;<br>    <span class="hljs-type">int</span> mid = (s + t) &gt;&gt; <span class="hljs-number">1</span>;<br>    <span class="hljs-built_in">build</span>(s,mid,p &lt;&lt; <span class="hljs-number">1</span>);<br>    <span class="hljs-built_in">build</span>(mid + <span class="hljs-number">1</span>,t,p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>);<br>    <span class="hljs-built_in">push_up</span>(p);<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">change</span><span class="hljs-params">(<span class="hljs-type">int</span> l,<span class="hljs-type">int</span> r,<span class="hljs-type">int</span> c,<span class="hljs-type">int</span> s,<span class="hljs-type">int</span> t,<span class="hljs-type">int</span> p)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (l &lt;= s &amp;&amp; t &lt;= r) &#123;<br>        tr[p].mi += c;<br>        tr[p].tag += c;<br>        <span class="hljs-keyword">return</span>;<br>    &#125;<br>    <span class="hljs-built_in">push_down</span>(p);<br>    <span class="hljs-type">int</span> mid = (s + t) &gt;&gt; <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">if</span> (l &lt;= mid) <span class="hljs-built_in">change</span>(l,r,c,s,mid,p &lt;&lt; <span class="hljs-number">1</span>);<br>    <span class="hljs-keyword">if</span> (r &gt;= mid + <span class="hljs-number">1</span>) <span class="hljs-built_in">change</span>(l,r,c,mid + <span class="hljs-number">1</span>,t,p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>);<br>    <span class="hljs-built_in">push_up</span>(p);<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">query</span><span class="hljs-params">(<span class="hljs-type">int</span> l,<span class="hljs-type">int</span> r,<span class="hljs-type">int</span> s,<span class="hljs-type">int</span> t,<span class="hljs-type">int</span> p)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (l &lt;= s &amp;&amp; t &lt;= r) &#123;<br>        <span class="hljs-keyword">if</span> (tr[p].mi) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">return</span> tr[p].num;<br>    &#125;<br>    <span class="hljs-built_in">push_down</span>(p);<br>    <span class="hljs-type">int</span> mid = (s + t) &gt;&gt; <span class="hljs-number">1</span>, res = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">if</span> (l &lt;= mid) res += <span class="hljs-built_in">query</span>(l,r,s,mid,p &lt;&lt; <span class="hljs-number">1</span>);<br>    <span class="hljs-keyword">if</span> (r &gt;= mid + <span class="hljs-number">1</span>) res += <span class="hljs-built_in">query</span>(l,r,mid + <span class="hljs-number">1</span>,t,p &lt;&lt; <span class="hljs-number">1</span>|<span class="hljs-number">1</span>);<br>    <span class="hljs-keyword">return</span> res;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    cin &gt;&gt; n &gt;&gt; k;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) cin &gt;&gt; a[i];<br>    <span class="hljs-built_in">build</span>(<span class="hljs-number">1</span>,n,<span class="hljs-number">1</span>);<br>    vector&lt;<span class="hljs-type">int</span>&gt; v[N];<br>    <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) &#123;<br>        <span class="hljs-keyword">if</span> (v[a[i]].<span class="hljs-built_in">empty</span>()) v[a[i]].<span class="hljs-built_in">push_back</span>(<span class="hljs-number">0</span>);<br>        <span class="hljs-keyword">if</span> (v[a[i]].<span class="hljs-built_in">size</span>() &gt; k) &#123;<br>            <span class="hljs-built_in">change</span>(v[a[i]][v[a[i]].<span class="hljs-built_in">size</span>() - k - <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>,v[a[i]][v[a[i]].<span class="hljs-built_in">size</span>() - k],<span class="hljs-number">-1</span>,<span class="hljs-number">1</span>,n,<span class="hljs-number">1</span>);<br>        &#125;<br>        v[a[i]].<span class="hljs-built_in">push_back</span>(i);<br>        <span class="hljs-keyword">if</span> (v[a[i]].<span class="hljs-built_in">size</span>() &gt; k) &#123;<br>            <span class="hljs-built_in">change</span>(v[a[i]][v[a[i]].<span class="hljs-built_in">size</span>() - k - <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>,v[a[i]][v[a[i]].<span class="hljs-built_in">size</span>() - k],<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,n,<span class="hljs-number">1</span>);<br>        &#125;<br>        ans += <span class="hljs-built_in">query</span>(<span class="hljs-number">1</span>,i,<span class="hljs-number">1</span>,n,<span class="hljs-number">1</span>);<br>    &#125;<br>    cout &lt;&lt; ans;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>); cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>    <span class="hljs-type">int</span> t = <span class="hljs-number">1</span>;<br><span class="hljs-comment">//    cin &gt;&gt; t;</span><br>    <span class="hljs-keyword">while</span> (t--) <span class="hljs-built_in">solve</span>();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>本文作者：</strong>Saanteye<br>
+        <strong>本文链接：</strong><a href="http://www.saanteye.com/2024/01/04/day1/" title="http:&#x2F;&#x2F;www.saanteye.com&#x2F;2024&#x2F;01&#x2F;04&#x2F;day1&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;www.saanteye.com&#x2F;2024&#x2F;01&#x2F;04&#x2F;day1&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+		
+			<a class="kirafont icon-tag-fill -none-link" href="/tags/XCPC/" rel="tag">XCPC</a>
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
